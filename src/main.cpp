@@ -86,7 +86,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire); /// no LED_RST her
 // the bytes. For TTN issued EUIs the last bytes should be 0xD5, 0xB3,
 // 0x70.
 
-static const u1_t PROGMEM APPEUI[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //TTN SERVER ONLY! -> Last Bytes: 0xD5, 0xB3, 0x70 | Instead: 0xF9, 0x81, 0x60 ;
+static const u1_t PROGMEM APPEUI[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //TTN SERVER ONLY! -> Last Bytes: 0xD5, 0xB3, 0x70
 void os_getArtEui(u1_t *buf) { memcpy_P(buf, APPEUI, 8); }
 
 // This should also be in little endian format, see above.
