@@ -1,6 +1,6 @@
 /*
 LilyGo T3_V1.6.1, ESP32, TTGO with LoRa32 - 868-915 Mhz, Sensor Values simulation;
-Created by Mario Andreev, 13.12.22
+Created by Mario Andreev, 17.12.22
 */
 
 //Arduino header
