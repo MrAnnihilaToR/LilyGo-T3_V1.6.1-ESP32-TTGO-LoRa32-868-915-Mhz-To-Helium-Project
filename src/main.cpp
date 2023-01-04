@@ -161,7 +161,11 @@ void do_send(osjob_t *j)
     }
 
     LMIC_setTxData2(1, mydata, sizeof(mydata) - 1, 0);
-    Serial.println(buffer);
+    for(int i=0;i < sizeof(mydata);i++)
+    {
+    Serial.print(buffer[i]);
+    }
+    Serial.println();
     Serial.println(F("Packet queued"));
     counter++;
   }
